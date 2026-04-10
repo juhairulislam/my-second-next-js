@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 const Posts = async() => {
@@ -36,6 +37,8 @@ const Posts = async() => {
                     <h1 className='font-bold text-xl text-pink-300'>{post.dish_name}</h1>
                     <h2 className='font-semibold badge badge-secondary mt-4'>{post.category}</h2>
                     <br />
+                    <br />
+                    <Link href={`/posts/${post.id}`} className='btn btn-soft btn-secondary'>Show details</Link>
                     
                 </div>)
             }
