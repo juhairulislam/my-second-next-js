@@ -18,6 +18,8 @@ const Posts = async() => {
 
 
     return (
+
+
         <div className='grid grid-cols-3 gap-8 mt-5 p-4'>
 
             {
@@ -32,7 +34,7 @@ const Posts = async() => {
 
 
                     <h1 className='font-bold text-xl '>{post.dish_name}</h1>
-                    <h2 className='font-semibold text-xl '>{post.category}</h2>
+                    <h2 className='font-semibold badge'>{post.category}</h2>
                     <br />
                     
                 </div>)
