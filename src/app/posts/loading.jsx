@@ -5,7 +5,7 @@ const LoadingData = () => {
         <div>
 
             <div className='flex justify-center items-center h-screen'>
-<span className="loading loading-bars loading-xl"></span>
+<span className="loading loading-spinner text-secondary"></span>
             </div>
         </div>
     );
