@@ -1,5 +1,7 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { IoCaretBackOutline } from 'react-icons/io5';
 
 const PostDetails =async ({params}) => {
  const {postId} = await params ;
@@ -14,7 +16,13 @@ const PostDetails =async ({params}) => {
 
 
     return (
-       <div className="flex justify-between gap-10 bg-base-100 shadow-sm">
+  <div>
+
+    
+            <Link href='/posts' className='btn btn-dash btn-secondary  ml-4 mb-2'><IoCaretBackOutline /> Back</Link>
+    
+    
+         <div className="flex justify-between gap-10 bg-base-100 shadow-sm">
   <figure>
     <Image className='p-20'
       src={details.image_link}
@@ -42,6 +50,7 @@ const PostDetails =async ({params}) => {
     </div>
   </div>
 </div>
+  </div>
     );
 };
 

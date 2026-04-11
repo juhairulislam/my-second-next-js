@@ -4,10 +4,10 @@ import Link from 'next/link';
 import { IoCaretBackOutline } from 'react-icons/io5';
 
 
-const Posts = async() => {
+const Posts = async () => {
 
-    const res =await fetch('https://phi-lab-server.vercel.app/api/v1/lab/foods');
-    const data=await res.json() ;
+    const res = await fetch('https://phi-lab-server.vercel.app/api/v1/lab/foods');
+    const data = await res.json();
 
     const datum = data.data
 
@@ -20,36 +20,36 @@ const Posts = async() => {
 
 
     return (
-        
+
 
 
         <div>
-                            <Link href='/' className='btn btn-secondary ml-4'><IoCaretBackOutline /> Back</Link>
+            <Link href='/' className='btn btn-secondary ml-4'><IoCaretBackOutline /> Back</Link>
 
 
             <div className='grid grid-cols-3 gap-8 mt-5 p-4'>
 
-            {
-                datum.map(post => <div key={post.id} className='shadow border border-purple-500 rounded-2xl p-4'>
+                {
+                    datum.map(post => <div key={post.id} className='shadow border border-purple-500 rounded-2xl p-4'>
 
-                     <Image
-      src={post.image_link}
-      alt={post.dish_name}
-      width={500}
-      height={500}
-    />
+                        <Image
+                            src={post.image_link}
+                            alt={post.dish_name}
+                            width={500}
+                            height={500}
+                        />
 
 
-                    <h1 className='font-bold text-xl text-pink-300'>{post.dish_name}</h1>
-                    <h2 className='font-semibold badge badge-secondary mt-4'>{post.category}</h2>
-                    <br />
-                    <br />
-                    <Link href={`/posts/${post.id}`} className='btn btn-soft btn-secondary'>Show details</Link>
-                    
-                </div>)
-            }
-            
-        </div>
+                        <h1 className='font-bold text-xl text-pink-300'>{post.dish_name}</h1>
+                        <h2 className='font-semibold badge badge-secondary mt-4'>{post.category}</h2>
+                        <br />
+                        <br />
+                        <Link href={`/posts/${post.id}`} className='btn btn-soft btn-secondary'>Show details</Link>
+
+                    </div>)
+                }
+
+            </div>
         </div>
     );
 };

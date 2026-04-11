@@ -11,6 +11,13 @@ const nextConfig = {
         pathname: '**',
         search: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'static.vecteezy.com',
+        port: '',
+        pathname: '**',
+        search: '',
+      },
     ],
   },
 };
