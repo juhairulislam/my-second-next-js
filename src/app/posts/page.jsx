@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
+import { IoCaretBackOutline } from 'react-icons/io5';
 
 
 const Posts = async() => {
@@ -19,9 +20,14 @@ const Posts = async() => {
 
 
     return (
+        
 
 
-        <div className='grid grid-cols-3 gap-8 mt-5 p-4'>
+        <div>
+                            <Link href='/' className='btn btn-secondary ml-4'><IoCaretBackOutline /> Back</Link>
+
+
+            <div className='grid grid-cols-3 gap-8 mt-5 p-4'>
 
             {
                 datum.map(post => <div key={post.id} className='shadow border border-purple-500 rounded-2xl p-4'>
@@ -43,6 +49,7 @@ const Posts = async() => {
                 </div>)
             }
             
+        </div>
         </div>
     );
 };
