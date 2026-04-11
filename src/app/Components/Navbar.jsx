@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Navbar = () => {
@@ -8,10 +9,10 @@ const Navbar = () => {
             </div>
 
             <div>
-                                <button className='btn btn-secondary'>All Foods</button>
+                <Link href='/posts' className='btn btn-secondary'>All Foods</Link>
 
             </div>
-           
+
         </div>
     );
 };
