@@ -27,7 +27,7 @@ const Posts = async () => {
             <Link href='/' className='btn btn-secondary ml-4'><IoCaretBackOutline /> Back</Link>
 
 
-            <div className='grid grid-cols-3 gap-8 mt-5 p-4'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-5 p-4'>
 
                 {
                     datum.map(post => <div key={post.id} className='shadow border border-purple-500 rounded-2xl p-4'>
