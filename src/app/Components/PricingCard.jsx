@@ -2,14 +2,20 @@ import React from 'react';
 
 const PricingCard = () => {
     return (
-        <div className='gird md:grid-cols-2 lg:grid-cols-3 p-8 bg-zinc-100 rounded-2xl mx-auto my-4'>
+      <div className='rounded-2xl mx-auto my-4 mt-8 '>
+
+        <div className='p-8 text-center text-transparent bg-clip-text bg-linear-to-r from-pink-500 to-rose-500 text-5xl font-extrabold'>
+            <h1>Take The Plan, <br /> Which Is Convenient For You</h1>
+        </div>
+
+          <div className='grid md:grid-cols-2 lg:grid-cols-3 p-8 gap-10'>
 
             <div>
                 <div className="card w-96 bg-base-100 shadow-sm">
   <div className="card-body">
     <span className="badge badge-xs badge-warning">Most Popular</span>
     <div className="flex justify-between">
-      <h2 className="text-3xl font-bold">Premium</h2>
+      <h2 className="text-3xl font-bold"></h2>
       <span className="text-xl">$29/mo</span>
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
@@ -126,6 +132,7 @@ const PricingCard = () => {
             </div>
             
         </div>
+      </div>
     );
 };
 
