@@ -33,7 +33,7 @@ const PostDetails =async ({params}) => {
     
   </figure>
   <div className="card-body">
-    <h2 className="card-title text-2xl font-bold mt-20">{details.dish_name}</h2>
+    <h2 className="card-title text-2xl font-extrabold mt-20">{details.dish_name}</h2>
     <p>{
     details.main_ingredients.map((ingredient, ind) => <div className='text-[15px] ' key={ind}>
 
