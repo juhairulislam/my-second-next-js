@@ -13,10 +13,10 @@ const PricingCard = () => {
             <div>
                 <div className="card w-96 bg-base-100 shadow-sm">
   <div className="card-body">
-    <span className="badge badge-xs badge-warning">Most Popular</span>
+    <span className="badge badge-xs badge-warning">Best Selling</span>
     <div className="flex justify-between">
-      <h2 className="text-3xl font-bold"></h2>
-      <span className="text-xl">$29/mo</span>
+      <h2 className="text-3xl font-bold">Basic</h2>
+      <span className="text-xl">$19/mo</span>
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
       <li>
@@ -93,10 +93,12 @@ const PricingCard = () => {
             <div>
                 <div className="card w-96 bg-base-100 shadow-sm">
   <div className="card-body">
-    <span className="badge badge-xs badge-warning">Most Popular</span>
+                <span className="badge badge-xs badge-warning">Most needed</span>
+
     <div className="flex justify-between">
-      <h2 className="text-3xl font-bold">Premium</h2>
-      <span className="text-xl">$29/mo</span>
+
+      <h2 className="text-3xl font-bold">Pro</h2>
+      <span className="text-xl">$99/mo</span>
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
       <li>
