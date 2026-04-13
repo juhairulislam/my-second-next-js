@@ -40,7 +40,7 @@ const Posts = async () => {
                         />
 
 
-                        <h1 className='font-bold text-xl text-pink-500'>{post.dish_name}</h1>
+                        <h1 className='font-bold text-2xl text-pink-500 my-4 border-b py-4'>{post.dish_name}</h1>
                         <h2 className='font-semibold badge badge-secondary mt-4'>{post.category}</h2>
                         <br />
                         <br />
