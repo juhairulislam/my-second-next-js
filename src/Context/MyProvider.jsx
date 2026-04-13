@@ -5,7 +5,7 @@ export const MyContext = createContext() ;
 
 const MyProvider = ({children}) => {
 
-    const [data , setData ] = useState('This is data value')
+    const [data , setData ] = useState([])
 
     return (
        <MyContext.Provider value={{data,setData}}>

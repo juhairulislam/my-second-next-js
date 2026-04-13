@@ -5,8 +5,19 @@ import React, { useContext } from 'react';
 
 const DetailsContext = ({ details }) => {
 
-    const {data} = useContext(MyContext);
-    console.log(data)
+    const {data , setData} = useContext(MyContext);
+    
+
+    const handleDataAddFromClick = (dish_name) =>{
+
+        setData([...data, dish_name])
+
+
+    }
+
+    console.log(data.length)
+
+
     return (
         <div className="flex flex-col md:flex-row justify-between gap-10 bg-base-100 shadow-sm">
             <figure>
@@ -32,7 +43,7 @@ const DetailsContext = ({ details }) => {
 
                 }
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Listen</button>
+                    <button onClick={()=>handleDataAddFromClick(details.dish_name)} className="btn btn-primary">Listen</button>
                 </div>
             </div>
         </div>
